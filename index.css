@@ -32,13 +32,11 @@ div {
 }
 
 .relogio {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .relogio > div {
-    display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 20px;
@@ -56,11 +54,18 @@ div {
 @media screen and (max-width: 600px) {
     .container {
         transform: scale(0.7);
+        padding: 50px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .container {
-        transform: scale(0.5);
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .relogio div:last-child {
+        display: none;
     }
 }
